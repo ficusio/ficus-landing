@@ -1,0 +1,163 @@
+@import 'nib'
+
+$screen-md = 600px
+$screen-sm = 400px
+
+body
+  font-family 'Roboto', sans-serif
+  font-weight 300
+  min-height 600px
+  position relative
+
+html, body
+  padding 0
+  margin 0
+  size 100%
+  box-sizing border-box
+
+@keyframes logoAnimation
+  0%
+    transform rotate(45deg)
+    opacity 1
+
+  30%
+    transform rotate(45deg)
+    opacity 1
+  32%
+    transform rotate(0deg) scale(1)
+    opacity 1
+  43%
+    transform translateX(-60px) scale(0.8)
+    opacity 0
+  44%
+    transform translateX(60px) scale(0.8)
+    opacity 0
+  54%
+    transform translateX(0) scale(1)
+    opacity 1
+  57%
+    transform rotate(45deg)
+    opacity 1
+  100%
+    transform rotate(45deg)
+    opacity 1
+
+.container
+  max-width 1200px
+  margin 0 auto
+  padding 80px 20px 100px 20px
+  text-align center
+  height 100%
+  box-sizing border-box
+
+  .logo
+    size 300px 140px
+    background url(/ficus-text.png)
+    background-size contain
+    margin 0 auto
+    position relative
+
+    .box
+      position absolute
+      width 75px
+      height 75px
+      background url(/ficus-logo.png)
+      background-size contain
+      transform rotate(45deg)
+      top 35px
+      left 50px
+      animation logoAnimation 6s infinite
+
+  h1
+    font-size 30px
+    color rgba(#000, 0.8)
+    margin-top 50px
+
+  h3
+    display inline-block
+    padding 0px 80px
+    box-sizing border-box
+    font-size 18px
+    color rgba(#000, 0.5)
+    width 100%
+    margin-top 20px
+
+  .formgroup
+    max-width 420px
+    width 100%
+    margin 0 auto
+    position relative
+    height 48px
+    margin-top 20px
+
+    input.email
+      display inline-block
+      font-size 18px
+      line-height 26px
+      font-family 'Roboto', sans-serif
+      font-weight 300
+      padding 10px 40px 10px 20px
+      box-shadow none
+      background rgba(black, 0.03)
+      border 1px solid rgba(black, 0.1)
+      border-radius 5px
+      width 100%
+      box-sizing border-box
+
+      &:focus,
+      &:active
+        outline none
+
+    button.submit
+      display block
+      background none
+      width 48px
+      height 48px
+      border none
+      padding 0px
+      position absolute
+      top 0px
+      right 0px
+      cursor pointer
+
+      &:focus,
+      &:active
+        outline none
+
+      &:before
+        content ''
+        cursor pointer
+        display block
+        background url(/arrow-right.png)
+        background-size contain
+        width 16px
+        height 16px
+        position absolute
+        top 50%
+        margin-top -8px
+        left 50%
+        margin-left -8px
+
+
+a.contact
+  position absolute
+  bottom 20px
+  left 50%
+  margin-left  -24px
+  display block
+  size 48px
+  border-radius 48px
+  background #06A2E5
+  text-align center
+  text-decoration none
+
+  &:before
+    content '\f186'
+    font-family 'Ionicons'
+    color white
+    font-size 32px
+    line-height 48px
+    font-smoothing antialiased
+
+
+

@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+
+  link(rel="stylesheet" href="stylesheets/app.css")
+  link(href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+  link(rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
+
+body
+  .container
+    .logo
+      .box
+    .content
+      h1 Фикус делает ваши слайды интерактивными и помогает лучше держать связь с аудиторией во время презентаций
+      h3
+        | Введите адрес электронной почты ниже, чтобы быть в курсе релиза.
+        | Мы терпеть не можем спам, так что ваша почта в безопасности.
+
+      .formgroup
+        input.email(type='email' placeholder="Введите вашу почту")
+        button.submit
+
+  a.contact(href='#')
