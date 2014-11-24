@@ -1,7 +1,7 @@
 @import 'nib'
 
-$screen-md = 600px
-$screen-sm = 400px
+$screen-md = 756px
+$screen-sm = 480px
 
 body
   font-family 'Roboto', sans-serif
@@ -14,6 +14,7 @@ html, body
   margin 0
   size 100%
   box-sizing border-box
+
 
 @keyframes logoAnimation
   0%
@@ -46,6 +47,10 @@ html, body
   max-width 1200px
   margin 0 auto
   padding 80px 20px 100px 20px
+
+  @media screen and (max-width: $screen-md)
+    padding 20px 20px 100px 20px
+
   text-align center
   height 100%
   box-sizing border-box
@@ -73,6 +78,10 @@ html, body
     color rgba(#000, 0.8)
     margin-top 50px
 
+    @media screen and (max-width: $screen-md)
+      margin-top 30px
+      font-size 18px
+
   h3
     display inline-block
     padding 0px 80px
@@ -81,6 +90,11 @@ html, body
     color rgba(#000, 0.5)
     width 100%
     margin-top 20px
+
+    @media screen and (max-width: $screen-md)
+      margin-top 30px
+      font-size 12px
+      padding 0px 10px
 
   .formgroup
     max-width 420px
@@ -97,12 +111,13 @@ html, body
       font-family 'Roboto', sans-serif
       font-weight 300
       padding 10px 40px 10px 20px
-      box-shadow none
       background rgba(black, 0.03)
       border 1px solid rgba(black, 0.1)
       border-radius 5px
       width 100%
       box-sizing border-box
+      box-shadow none
+      appearance none
 
       &:focus,
       &:active
@@ -134,7 +149,7 @@ html, body
         height 16px
         position absolute
         top 50%
-        margin-top -8px
+        margin-top -7px
         left 50%
         margin-left -8px
 
